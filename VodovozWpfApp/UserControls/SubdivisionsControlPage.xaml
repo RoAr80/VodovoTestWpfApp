@@ -44,7 +44,7 @@
                         <DataGridTextColumn Header="Название подразделения"
                                     Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
 
-                        <DataGridTemplateColumn  Header="Менеджер" >
+                        <DataGridTemplateColumn  Header="Руководитель" >
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <DockPanel >
