@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="VodovozWpfApp.SubdivisionPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VodovozWpfApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Margin="40">
+        <Button Width="40" Height="20" Command="{Binding GoBackCommand}" 
+                Content="&lt;-"
+                ToolTip="Go Back"
+                HorizontalAlignment="Left"/>
+        <TextBlock FontSize="36">
+            <Run Text="Подразделение: "/>
+            <Run Text="{Binding SubdivisionName}"/>
+        </TextBlock>
+        <TextBlock FontSize="30" Margin="0 20 0 0">
+            <Run Text="Руководитель: "/>
+            <Run Text="{Binding Manager.Name}"/>
+            <Run Text="{Binding Manager.Surname}"/>
+            <Run Text="{Binding Manager.FatherName}"/>
+            <Button Command="{Binding NavigateToEmployeeCommand}" 
+                    CommandParameter="{Binding Manager.Id}"
+                    Visibility="{Binding Manager, Converter={local:ButtonLinkVisibilityConverter}}"
+                    Content="->"
+                    Height="40"/>
+        </TextBlock>
+        
+    </StackPanel>
+</UserControl>

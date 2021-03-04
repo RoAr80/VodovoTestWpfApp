@@ -1,0 +1,9 @@
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\bin\Debug\netcoreapp3.1\Vodovoz.Models.deps.json
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\bin\Debug\netcoreapp3.1\Vodovoz.Models.dll
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\bin\Debug\netcoreapp3.1\Vodovoz.Models.pdb
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\obj\Debug\netcoreapp3.1\Vodovoz.Models.csprojAssemblyReference.cache
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\obj\Debug\netcoreapp3.1\Vodovoz.Models.AssemblyInfoInputs.cache
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\obj\Debug\netcoreapp3.1\Vodovoz.Models.AssemblyInfo.cs
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\obj\Debug\netcoreapp3.1\Vodovoz.Models.csproj.CoreCompileInputs.cache
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\obj\Debug\netcoreapp3.1\Vodovoz.Models.dll
+D:\DEV\Job\Vodovoz\VodovozWpfApp\Vodovoz.Models\obj\Debug\netcoreapp3.1\Vodovoz.Models.pdb

@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="VodovozWpfApp.EmployeePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VodovozWpfApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Margin="40">
+        <Button Width="40" Height="20" Command="{Binding GoBackCommand}" 
+                Content="&lt;-"
+                ToolTip="Go Back"
+                HorizontalAlignment="Left"/>
+        <TextBlock FontSize="36">
+            <Run Text="Имя: "/>
+            <Run Text="{Binding EmployeeName}"/>
+        </TextBlock>
+        <TextBlock FontSize="36">
+            <Run Text="Фамилия: "/>
+            <Run Text="{Binding EmployeeSurname}"/>
+        </TextBlock>
+        <TextBlock FontSize="36">
+            <Run Text="Отчество: "/>
+            <Run Text="{Binding EmployeeFatherName}"/>
+        </TextBlock>
+        <TextBlock FontSize="36">
+            <Run Text="Дата Рождения: "/>
+            <Run Text="{Binding EmployeeBirthday}"/>
+        </TextBlock>
+        <TextBlock FontSize="36">
+            <Run Text="Пол: "/>
+            <Run Text="{Binding EmployeeSex}"/>
+        </TextBlock>
+        <TextBlock FontSize="36">
+            <Run Text="Подразделение: "/>
+            <Run Text="{Binding EmployeeSubdivision.Name}"/>
+            <Button Command="{Binding NavigateToSubdivision}" 
+                    CommandParameter="{Binding EmployeeSubdivision.Id}"
+                    Visibility="{Binding EmployeeSubdivision, Converter={local:ButtonLinkVisibilityConverter}}"                    
+                    Content="->"
+                    Height="40"/>
+        </TextBlock>
+        
+
+    </StackPanel>
+</UserControl>
